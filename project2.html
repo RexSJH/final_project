@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/rex's_logo.png" />
+  <link rel="stylesheet" type="text/css" href="css/default_style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Rex's website_homepage</title>
+
+  <a href="#main" class="skip">Skip to Content</a>
+  <div class="topnav" id="myTopnav">
+    <a href = "index.html">About</a>
+    <a href = "project_homepage.html" class = active>Project</a>
+    <a href = "https://drive.google.com/open?id=1ykxioL4F78nVALXxwVs0J4i4VDS1BmDf" target=_blank  class = menu>Resume</a>
+    <a href = "contactme.html" class = menu>Contact</a>
+    <a class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+  </div>
+  <script>
+  // hamberger menu
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  // Sticky Navbar
+  window.onscroll = function() {stickyFunction()};
+  var navbar = document.getElementById("myTopnav");
+  var sticky = navbar.offsetTop;
+
+  function stickyFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25209781-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-25209781-1');
+  </script>
+
+</head>
+
+  <main id="main">
+  <h1>ONSF</h1>
+  <p>Use contextual inquiry skills to improve the communication strategy for ONSF at university of Michigan!</p>
+  <img src="images/onsf_project/1.jpg"
+       alt="slide 1"
+       title = "Project slide1"
+       class= "img_responsive">
+  <img src="images/onsf_project/2.jpg"
+       alt="slide 2"
+       title = "Project slide2"
+       class= "img_responsive">
+  <img src="images/onsf_project/3.jpg"
+       alt="slide 3"
+       title = "Project slide3"
+       class= "img_responsive">
+
+  </main>
+  </body>
+</html>

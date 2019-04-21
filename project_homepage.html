@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/rex's_logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/default_style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Rex's website_project homepage</title>
+
+    <a href="#main" class="skip">Skip to Content</a>
+    <div class="topnav" id="myTopnav">
+      <a href = "index.html">About</a>
+      <a href = "project_homepage.html" class = active>Project</a>
+      <a href = "https://drive.google.com/open?id=1ykxioL4F78nVALXxwVs0J4i4VDS1BmDf" target=_blank  class = menu>Resume</a>
+      <a href = "contactme.html" class = menu>Contact</a>
+      <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <script>
+    // hamberger menu
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    // Sticky Navbar
+    window.onscroll = function() {stickyFunction()};
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25209781-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-25209781-1');
+    </script>
+
+    </head>
+
+  <body>
+    <main id="homepage">
+      <main id="main">
+        <h1>PROJECTS</h1>
+        <p>“Stay hungry, stay foolish”</p>
+        <p>Let us change the world with UX products!</p>
+      </main>
+    <div class= "project-container">
+        <div>
+          <h2>HEALTHDE</h2>
+          <!-- <p>“Detect it, prevent it !”</p> -->
+          <img src="images/project_logo1_healthde.png"
+               alt="project logo picture"
+               title = "Project logo picture"
+               class = "project_logo"/>
+          <p>HEALTHDe is a multi-functional mobile application which helps you to track disease, learn health knowledge, get prevention methods, find physicians, and make doctor’s appointment.</p>
+          <p><a class="button" href="project1.html"><span>LEARN MORE</span></a></p>
+        </div>
+        <div>
+        <h2>ONSF</h2>
+        <img src="images/project_logo2_triplecj.png"
+             alt="project logo picture2"
+             title = "Project logo picture2"
+             class = "project_logo"/>
+        <p>The ONSF is an abbreviation of Office of National Scholarships and Fellowships. The office is promoting scholarship and fellowship opportunities that are broadly accessible to UM students from all backgrounds. However, it currently faces communication problem with students and other potential issues.</p>
+        <p>Our team (Triple C-J Consulting group) used contextual inquiry method to analyze challenges the office faces and provide recommendations to our client.</p>
+
+        <p><a class="button" href="project2.html"><span>LEARN MORE</span></a></p>
+        </div>
+        <div>
+        <h2>Design Festival</h2>
+        <!-- <p>Let the imagination fly every day! </p> -->
+        <img src="images/project_logo3_festival.png"
+             alt="project logo picture3"
+             title = "Project logo picture3"
+             class = "project_logo"/>
+        <p><a class="button" href="design_festival.html"><span>LEARN MORE</span></a></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
